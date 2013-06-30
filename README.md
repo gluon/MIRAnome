@@ -1,12 +1,12 @@
 +---------------------------------------------------------------+
-|								|
-|		MIRAnome64					|
-|			The Virtual Monome for iPad / MIRA	|
-|								|
-|			Cheaply patched & coded by		|
-|			julien bayle				|
-|								|
-|			http://julienbayle.net/miranome		|
+|								                                                |
+|		MIRAnome64					                                        |
+|			The Virtual Monome for iPad / MIRA	                      |
+|								                                                |
+|			Cheaply patched & coded by		                            |
+|			julien bayle				                                      |
+|								                                                |
+|			http://julienbayle.net/miranome		                        |
 +---------------------------------------------------------------+
 
 MIRAnome64 is "just" the virtual monome64 on iPad using MIRA application (http://cycling74.com/products/mira)
