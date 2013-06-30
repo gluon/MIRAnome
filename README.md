@@ -1,11 +1,9 @@
-|		MIRAnome64					                                        |
-|			The Virtual Monome for iPad / MIRA	                      |
-|								                                                |
-|			Cheaply patched & coded by		                            |
-|			julien bayle				                                      |
-|								                                                |
-|			http://julienbayle.net/miranome		                        |
-+---------------------------------------------------------------+
++-----------------------------------------+
+MIRAnome64
+The Virtual Monome for iPad / MIRA
+Cheaply patched & coded by julien bayle
+http://julienbayle.net/miranome
++-----------------------------------------+
 
 MIRAnome64 is "just" the virtual monome64 on iPad using MIRA application (http://cycling74.com/products/mira)
 
@@ -15,11 +13,7 @@ You can use monome64 application diectly with MIRAnome64, but I did not test ALL
 It is also based on ledGrid.js basically handling communication with the *hack-workaround panel object based grid of "LEDs"
 
 
-
-
-
-|		ledGrid.js					|
-|			The script				|
+-----ledGrid.js / The script
 
 ledGrid.js is a script building an hacked matrix of panel objects controllable
 using standard monome commands.
@@ -42,8 +36,7 @@ Please check http://monome.org/docs/tech:osc for further informations about mess
 Not everything is implemented because without using a real hardware, some don't make sense.
 
 
-|		future					|
-|			the roadmap			|
+-----future / the roadmap
 
 The JS is a proof of concept. It will probably be ported to JAVA or even pure Max objects in order to be faster. Anyway, it is fast :)
 1/ MIRAnome 128 & 256 port
@@ -51,4 +44,3 @@ The JS is a proof of concept. It will probably be ported to JAVA or even pure Ma
 
 
 Feel free to go and check http://interactive-multimedia-programming-with-max6.com (the next book website)
-
