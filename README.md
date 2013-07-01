@@ -13,6 +13,9 @@ You can use monome64 application diectly with MIRAnome64, but I did not test ALL
 It is also based on ledGrid.js basically handling communication with the *hack-workaround panel object based grid of "LEDs"
 
 
+*Check the video : http://www.youtube.com/watch?feature=player_embedded&v=GFJruGElx7o*
+
+
 ledGrid.js / The script
 -----------------------
 
