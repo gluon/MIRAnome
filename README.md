@@ -17,6 +17,18 @@ NB ->>> It requires currently *OSC-Route* but I'm going to kill that dependency 
 *Check the video : http://www.youtube.com/watch?feature=player_embedded&v=GFJruGElx7o*
 
 
+CHANGELOG
+---------
+
+
+0.2 - 01/07/13 
+- color support added to protocol
+- some cleanup
+
+0.1 - 30/06/13
+- first release
+
+
 ledGrid.js / The script
 -----------------------
 
@@ -28,14 +40,15 @@ using standard monome commands.
 http://julienbayle.net/miranome
 
 *messages use
-* build / build the whole LEDs matrix. It usually occurs only one time at the patch launch.
-* destroy / it destroys the whole LEDs matrix. You don't have to take care about it as the patch does it when it is freed.
-* all <s> / it light on or off the whole matrix. If s is 1, all lights up, else lights down.
-* row <x> <offY> <s>
-* col <y> <offX> <s>
-* set <x> <y> <s> / it light on or off particular LED at coordinates (x,y). If s is 1, light up, else light down.
-* map <offX> <offY>
-* intensity
+- build / build the whole LEDs matrix. It usually occurs only one time at the patch launch.
+- destroy / it destroys the whole LEDs matrix. You don't have to take care about it as the patch does it when it is freed.
+- all <s> / it light on or off the whole matrix. If s is 1, all lights up, else lights down.
+- row <x> <offY> <s> / offY has to b zero (compatibiliy with monome protocol purpose only); s is a bitmask, 0 means no led, 255 means all led on (check monome website)
+- col <y> <offX> <s> / offX has to b zero (compatibiliy with monome protocol purpose only); s is a bitmask, 0 means no led, 255 means all led on (check monome website)
+- set <x> <y> <s> / it light on or off particular LED at coordinates (x,y). If s is 1, light up, else light down.
+- map <offX> <offY> <s[8]> / ; s[8] are bitmasks for each row,  0 means no led, 255 means all led on (check monome website)
+
+- all, row, col, set and map message can contains 3 integers more at the end corresponding to RGB components value
 
 Please check http://monome.org/docs/tech:osc for further informations about messages.
 Not everything is implemented because without using a real hardware, some don't make sense.
