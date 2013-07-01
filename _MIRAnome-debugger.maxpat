@@ -8,7 +8,7 @@
 			"architecture" : "x64"
 		}
 ,
-		"rect" : [ 169.0, 44.0, 847.0, 503.0 ],
+		"rect" : [ 828.0, 232.0, 847.0, 503.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 1,
 		"default_fontsize" : 12.0,
@@ -28,6 +28,22 @@
 		"digest" : "",
 		"tags" : "",
 		"boxes" : [ 			{
+				"box" : 				{
+					"fontname" : "Courier",
+					"fontsize" : 12.0,
+					"id" : "obj-15",
+					"maxclass" : "message",
+					"numinlets" : 2,
+					"numoutlets" : 1,
+					"outlettype" : [ "" ],
+					"patching_rect" : [ 58.0, 92.14286, 47.0, 16.0 ],
+					"presentation" : 1,
+					"presentation_rect" : [ 29.0, 74.0, 47.0, 16.0 ],
+					"text" : "clear"
+				}
+
+			}
+, 			{
 				"box" : 				{
 					"fontname" : "Courier",
 					"fontsize" : 12.0,
@@ -105,7 +121,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 298.0, 532.992798, 154.0, 67.0 ],
+					"patching_rect" : [ 769.428589, 529.992798, 154.0, 67.0 ],
 					"presentation" : 1,
 					"presentation_rect" : [ 359.0, 291.0, 237.0, 46.0 ],
 					"text" : "receive from MIRA"
@@ -124,7 +140,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 298.0, 482.992767, 154.0, 67.0 ],
+					"patching_rect" : [ 605.428589, 517.992737, 154.0, 67.0 ],
 					"presentation" : 1,
 					"presentation_rect" : [ 73.25, 291.0, 178.5, 46.0 ],
 					"text" : "send to MIRA"
@@ -156,11 +172,11 @@
 					"fontsize" : 30.598102,
 					"frgb" : 0.0,
 					"id" : "obj-157",
-					"linecount" : 3,
+					"linecount" : 2,
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 93.214294, 482.992767, 201.0, 98.0 ],
+					"patching_rect" : [ 93.214294, 482.992767, 210.0, 68.0 ],
 					"presentation" : 1,
 					"presentation_rect" : [ 407.0, 5.0, 421.0, 37.0 ],
 					"text" : "MIRAnome64 debug patch"
@@ -237,13 +253,13 @@
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 462.0, 362.0, 100.0, 18.0 ],
 					"saved_object_attributes" : 					{
-						"client_rect" : [ 99, 100, 499, 600 ],
+						"client_rect" : [ 1168, 192, 1568, 692 ],
 						"parameter_enable" : 0,
 						"storage_rect" : [ 200, 200, 800, 500 ]
 					}
 ,
 					"text" : "pattrstorage",
-					"varname" : "u543000215"
+					"varname" : "u374000244"
 				}
 
 			}
@@ -263,7 +279,7 @@
 					}
 ,
 					"text" : "autopattr",
-					"varname" : "u820000225"
+					"varname" : "u942000271"
 				}
 
 			}
@@ -807,7 +823,7 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "int" ],
 					"parameter_enable" : 0,
-					"patching_rect" : [ 253.0, 223.142853, 47.0, 47.0 ],
+					"patching_rect" : [ 253.0, 216.642853, 43.0, 43.0 ],
 					"presentation" : 1,
 					"presentation_rect" : [ 219.0, 204.0, 47.0, 47.0 ]
 				}
@@ -897,6 +913,15 @@
 					"disabled" : 0,
 					"hidden" : 0,
 					"source" : [ "obj-14", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-14", 0 ],
+					"disabled" : 0,
+					"hidden" : 0,
+					"source" : [ "obj-15", 0 ]
 				}
 
 			}
